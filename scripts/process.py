@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     count = 0
     for line in f:
-        urllib.urlretrieve(line, line.split('/')[-1])
+        urllib.urlretrieve(line, './rewardsi/' + line.split('/')[-1].strip('?'))
 
     f.close()
 
