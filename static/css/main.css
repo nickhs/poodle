@@ -1,0 +1,38 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+#viewport {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background #111111;
+}
+
+#wall {
+  z-index: 1;
+  position: absolute;
+}
+
+#overlay {
+  z-index: 2;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+
+#overlay h1 {
+  font: bold 60px Helvetica, Sans-Serif;
+  letter-spacing: -2px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 13px;
+  white-space: nowrap;
+  /* text-shadow: 0.4em 0.4em 1em black; */
+}
