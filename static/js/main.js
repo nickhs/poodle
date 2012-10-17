@@ -37,6 +37,7 @@ window.addEvent('domready', function() {
     var new_pos = current;
 
     if (!current) {
+      new_pos = {};
       new_pos.c = 0;
       new_pos.r = 0;
     } else {
