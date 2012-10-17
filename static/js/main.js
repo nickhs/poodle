@@ -36,10 +36,15 @@ window.addEvent('domready', function() {
     var current = wall.getCoordinatesFromId(wall.getActiveItem());
     var new_pos = current;
 
-    if (direction == 1) {
-      new_pos.c = current.c + velocity;
+    if (!current) {
+      new_pos.c = 0;
+      new_pos.r = 0;
     } else {
-      new_pos.r = current.r + velocity;
+      if (direction == 1) {
+        new_pos.c = current.c + velocity;
+      } else {
+        new_pos.r = current.r + velocity;
+      }
     }
 
     wall.moveToActive(new_pos.c, new_pos.r);
